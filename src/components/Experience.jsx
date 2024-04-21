@@ -25,19 +25,17 @@ const Experience = () => {
     <>
       <div
         name="experience"
-        className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+        className="bg-gradient-to-b  from-gray-800 to-black w-full h-[180vh]"
       >
-        <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+        <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-[150vh] text-white">
             <div>
-          <p className="text-6xl font-bold border-b-4 border-gray-500 p-2 inline">
+          <p className="text-3xl  mt-20  font-bold border-b-4  border-gray-500  p-2  inline">
             Experience
           </p>
-          <p className="py-6 text-2xl font-bold mt-2 text-center">These are the technologies I have worked on</p>
+          <p className="py-4 text-xl font-bold mt-2 text-center">These are the technologies I have worked on</p>
         </div>
-      
-      {/* ................. */}
-
-      <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+        
+      <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-6 px-10 sm:px-0">
 
         {techs.map(({ id, src, title, style }) => (
           <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>

@@ -21,7 +21,7 @@ function Navbar() {
       <div>
         <h1 className="font-signature ml-3 text-4xl text-white animate-text-focus-in">Priya arya</h1>
       </div>
-
+          
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
           <li

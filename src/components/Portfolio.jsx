@@ -22,17 +22,16 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-black to-gray-800 w-full h-full text-white md:h-screen"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-[600px]">
+      <div className="max-w-screen-lg p-4 mx-auto  flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <h1 className="text-4xl font-bold inline-border-b-4 border-gray-500">
-            Portfolio
+          <h1 className="text-3xl  text-center mb-12 font-bold inline-border-b-4 border-gray-500">
+            Projects
           </h1>
-          <p className="py-6 text-center text-2xl">Check out some of my work here </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 px-12 sm:px-0">
         {
           portfolios.map(({id,src,para,demoLink,codeLink})=>(
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
